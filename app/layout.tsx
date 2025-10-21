@@ -11,9 +11,9 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
 
 export const metadata: Metadata = {
-  title: "Shahzad Akram - Front-End Developer | Portfolio",
+  title: "Shahzad Akram - Front-End Developer | Portfolio | shahzad akram developer",
   description:
-    "Front-End Developer specializing in React, Next.js, and TypeScript. Crafting responsive, user-friendly interfaces with a focus on performance and accessibility.",
+    "Shahzad Akram Front-End Developer specializing in React, Next.js, and TypeScript. Crafting responsive, user-friendly interfaces with a focus on performance and accessibility.",
   keywords: ["Front-End Developer", "React Developer", "Next.js", "TypeScript", "Web Developer", "Portfolio"],
   authors: [{ name: "Shahzad Akram" }],
   creator: "Shahzad Akram",
