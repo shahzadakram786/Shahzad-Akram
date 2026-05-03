@@ -89,7 +89,7 @@ export default function RootLayout({
       </head>
       <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased bg-slate-950 text-slate-50`}>
         <Navbar />
-        <main className="pt-24 min-h-screen">
+        <main className="min-h-screen">
           {children}
         </main>
         <Analytics />

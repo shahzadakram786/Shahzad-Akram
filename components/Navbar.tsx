@@ -43,7 +43,7 @@ export default function Navbar() {
         setActiveSection("#home")
       }
     }
-    
+
     window.addEventListener("scroll", handleScroll)
     // Trigger once on load
     handleScroll()
@@ -53,7 +53,7 @@ export default function Navbar() {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
     e.preventDefault()
     setIsMobileMenuOpen(false)
-    
+
     if (path === "#home") {
       window.scrollTo({ top: 0, behavior: "smooth" })
       return
@@ -91,9 +91,8 @@ export default function Navbar() {
                   <a
                     href={link.path}
                     onClick={(e) => handleLinkClick(e, link.path)}
-                    className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors inline-block ${
-                      isActive ? "text-white" : "text-gray-400 hover:text-white"
-                    }`}
+                    className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors inline-block ${isActive ? "text-white" : "text-gray-400 hover:text-white"
+                      }`}
                   >
                     {isActive && (
                       <motion.div
@@ -141,11 +140,10 @@ export default function Navbar() {
                     key={link.name}
                     href={link.path}
                     onClick={(e) => handleLinkClick(e, link.path)}
-                    className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
-                      isActive
+                    className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${isActive
                         ? "bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border border-purple-500/30 text-white"
                         : "text-gray-400 hover:bg-slate-800 hover:text-white"
-                    }`}
+                      }`}
                   >
                     {link.name}
                   </a>
